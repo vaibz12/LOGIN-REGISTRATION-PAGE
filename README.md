@@ -27,24 +27,24 @@ cd mern-auth-app
 ### 2. Install Dependencies
 #### Frontend
 ```sh
-cd client
+cd frontend
 npm install
 ```
 #### Backend
 ```sh
-cd server
+cd backend
 npm install
 ```
 
 ### 3. Start the Application
 #### Start Backend Server
 ```sh
-cd server
+cd backend
 npm start
 ```
 #### Start Frontend
 ```sh
-cd client
+cd frontend
 npm start
 ```
 
@@ -56,13 +56,13 @@ npm start
 ## Folder Structure
 ```
 mern-auth-app/
-  ├── client/        # React Frontend
-  ├── server/        # Express Backend
+  ├── frontend/        # React Frontend
+  ├── backend/        # Express Backend
   ├── README.md      # Documentation
 ```
 
 ## Environment Variables
-Create a `.env` file in the `server` directory and add:
+Create a `.env` file in the `backend` directory and add:
 ```sh
 PORT=5000
 MONGO_URI=your_mongodb_uri
