@@ -1,0 +1,131 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("https://source.unsplash.com/1600x900/?technology,abstract") no-repeat center center/cover;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+/* Centering Forms */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Glassmorphism Form */
+.glass-form {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.glass-form h2 {
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.glass-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Buttons */
+.form-btn, .dashboard-btn {
+    background: #007bff;
+    border: none;
+    padding: 14px;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.form-btn:hover, .dashboard-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Dashboard Styling */
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dashboard-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Toggle Switch */
+.toggle-container {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.toggle-btn {
+    width: 50px;
+    height: 25px;
+    background: #ddd;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.toggle-btn::before {
+    content: '🌙';
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+/* Dark Mode Styles */
+.dark-mode .toggle-btn {
+    background: #555;
+}
+
+.dark-mode .toggle-btn::before {
+    content: '☀️';
+    left: 25px;
+}
